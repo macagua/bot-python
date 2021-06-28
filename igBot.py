@@ -16,13 +16,14 @@ LINK_DO_POST = os.getenv('LINK_DO_POST')
 class InstagramBot:
     def __init__(self, userName, password, link_do_post, driver):
         """ Class constructor """
+
         self.userName = userName
         self.password = password
         self.link_do_post = link_do_post
         self.driver = webdriver.Firefox(executable_path=driver)
 
     def login(self):
-        """ Instagram login function """
+        """ Login to Instagram Function """
 
         driver = self.driver
         # The link for instagram login
